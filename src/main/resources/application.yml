@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: fw-gateway-service
+server:
+  port: 8081
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8083/eureka/
